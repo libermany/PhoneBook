@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Favorites Interaction Widget</title>
+
+		<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+        <script src="https://sdk-cdn.mypurecloud.com/client-apps/2.6.7/purecloud-client-app-sdk.js"></script>
+        <script src="https://sdk-cdn.mypurecloud.com/javascript/latest/purecloud-platform-client-v2.min.js"></script>
+
+    </head>
+    <body>
+        <h1 id="title" width="100%" align="center">Favorites Interaction Widget</h1>
+        <h2 id="status" width="100%" align="center">Status</h2>
+
+        <p>This is an example of how to display a list of common "favorite" transfer targets.</p>
+        <p>The list of corporate favorites is controlled using External Organizations and Contacts.</p>
+        <p>Create an External Organization named "Favorites".  Then within the "Favorites" External Organization create as many External Contacts as you'd like to represent the items that should be listed as "Favorites" to the agent.</p>
+        <p>For a Queue favorite enter "Queue" as the first name and the name of the queue as the last name</p>
+        <p>For a Number favorite enter "Number" as the first name and the phone number to dial as the last name, must includd '+{country_code}'.</p>
+        <p>For a User favorite enter "User" as the first name and the user name (i.e. email address) of the target user</p>
+
+        <div id="favorites"></div>
+
+	    <script src="js/FavoritesInteractionWidget.js"></script>
+    </body>
+</html>
